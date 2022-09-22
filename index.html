@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluraflix</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <a href="">
+                <h1 class="titulo">Aluraflix</h1>
+            </a>
+        </div>
+        <nav class="menu">
+            <a href="#">Início</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Adicionados Recentes</a>
+        </nav>
+
+        <div class="search-box">
+            <input class="search-text" type="text" name="" placeholder="Faça a sua pesquisa">
+            <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+
+        <a href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="logo-alura">
+        </a>
+    </header>
+    <main>
+        <div class="container">
+            <p class="subtitulo">Adicione seus filmes e séries favoritos!</p>
+
+            <div class="form-wrapper">
+                <input type="text" id="filme" name="filme" placeholder="Insira o endereço da imagem">
+                <input type="text" id="nome-filme" placeholder="Insira o nome do Filme/Série">
+                <button type="submit" onclick="adicionarFilmes()">Adicionar Filmes</button>
+            </div>
+        </div>
+        <div class="filmes-series">
+            <div id="listafilmes"></div>
+        </div>
+    </main>
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
